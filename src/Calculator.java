@@ -26,7 +26,14 @@ class Calculator {
         int b = solution.Calc(0, arr);
         int c = solution.Calc(1, arr);
 
-        System.out.println(solution.rezultat(a, b, c));
+      	int d = solution.count(a, b, c);
+      
+      	if (a.contains("X") || a.contains("I") || a.contains("V")) {
+        	System.out.println(one.exeption2(a, d));
+        }if(d<0){
+          System.out.println("throws Exeptions");
+        }else
+          System.out.println(d);
     }
 
 }
